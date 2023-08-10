@@ -1,0 +1,11 @@
+2023-08-10 14:17:29 INFO  - Starting App using Java 17.0.7 with PID 24904 (D:\JavaZaawanosowana-09-11.08.2023\2023.08.10-book-store\book-store\target\classes started by Mateusz in D:\JavaZaawanosowana-09-11.08.2023\2023.08.10-book-store\book-store)
+2023-08-10 14:17:29 INFO  - No active profile set, falling back to 1 default profile: "default"
+2023-08-10 14:17:30 INFO  - Tomcat initialized with port(s): 8080 (http)
+2023-08-10 14:17:30 INFO  - Initializing ProtocolHandler ["http-nio-8080"]
+2023-08-10 14:17:30 INFO  - Starting service [Tomcat]
+2023-08-10 14:17:30 INFO  - Starting Servlet engine: [Apache Tomcat/10.1.11]
+2023-08-10 14:17:30 INFO  - Initializing Spring embedded WebApplicationContext
+2023-08-10 14:17:30 INFO  - Root WebApplicationContext: initialization completed in 786 ms
+2023-08-10 14:17:30 INFO  - Starting ProtocolHandler ["http-nio-8080"]
+2023-08-10 14:17:30 INFO  - Tomcat started on port(s): 8080 (http) with context path ''
+2023-08-10 14:17:30 INFO  - Started App in 1.458 seconds (process running for 2.033)

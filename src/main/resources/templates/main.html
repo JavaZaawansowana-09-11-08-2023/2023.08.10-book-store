@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Book Store</title>
+</head>
+<body>
+<div th:replace="~{fragments.html :: menu}"></div>
+<form method="get">
+    <input type="text" placeholder="Szukaj" name="pattern">
+    <input type="submit" value="OK">
+</form>
+<div th:each="book : ${books}" style="border: 1px solid black; margin: 10px;">
+    <div th:text="${'Tytuł: ' + book.title}"></div>
+    <div th:text="${'Autor: ' + book.author}"></div>
+    <div th:text="${'Cena: ' + book.price}"></div>
+    <div th:text="${'Ilość: ' + book.quantity}"></div>
+</div>
+</body>
+</html>

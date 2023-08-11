@@ -11,7 +11,6 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
-@Repository
 public class BookDAO implements IBookRepository {
     @Autowired
     Connection connection;
@@ -84,7 +83,8 @@ public class BookDAO implements IBookRepository {
     public void persist(Book book) {
         String sql = "INSERT INTO tbook (title, author, price, quantity) VALUES (?,?,?,?)";
         try {
-            PreparedStatement ps = this.connection.prepareStatement(sql, PreparedStatement.RETURN_GENERATED_KEYS);
+            PreparedStatement ps = this.connection.prepareStatement(sql,
+                    PreparedStatement.RETURN_GENERATED_KEYS);
             ps.setString(1, book.getTitle());
             ps.setString(2, book.getAuthor());
             ps.setDouble(3, book.getPrice());

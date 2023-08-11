@@ -37,4 +37,19 @@ public class BookRepository implements IBookRepository {
                 .filter(b -> b.getAuthor().toLowerCase().contains(pattern.toLowerCase()))
                 .toList();
     }
+
+    @Override
+    public void persist(Book book) {
+        throw new RuntimeException();
+    }
+
+    @Override
+    public void update(Book book) {
+        throw new RuntimeException();
+    }
+
+    @Override
+    public void remove(Book book) {
+        throw new RuntimeException();
+    }
 }

@@ -19,7 +19,7 @@ public class Interceptor implements HandlerInterceptor {
                            HttpServletResponse response,
                            Object handler,
                            ModelAndView modelAndView) throws Exception {
-        if(sessionObject != null)
+        if(sessionObject != null && modelAndView != null)
             modelAndView.addObject("logged", sessionObject.isLogged());
     }
 }

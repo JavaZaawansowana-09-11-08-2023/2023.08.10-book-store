@@ -9,4 +9,7 @@ public interface IBookRepository {
     List<Book> getAll();
     Optional<Book> getById(int id);
     List<Book> getByPattern(String pattern);
+    void persist(Book book);
+    void update(Book book);
+    void remove(Book book);
 }
